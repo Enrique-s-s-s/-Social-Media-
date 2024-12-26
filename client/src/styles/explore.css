@@ -1,0 +1,241 @@
+/* -----------------------------------
+    Explore
+----------------------------------- */
+
+.explore-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.explore-page h2 {
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eaeaea;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.explore-page .card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.explore-page .card:hover {
+  transform: translateY(-10px);
+}
+
+.explore-page .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.explore-page .card-body {
+  padding: 20px;
+}
+
+.explore-page .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #97999c;
+}
+
+.explore-page .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.explore-page .btn {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border-radius: 25px;
+  background-color: #6f42c1;
+  border: 1px solid #5a2e9e;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.explore-page .btn:hover {
+  background-color: #5a2e9e;
+}
+
+.explore-page .placeholder-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  height: 350px;
+}
+
+.explore-page .placeholder-img {
+  background-color: #e0e0e0;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.explore-page .placeholder-title,
+.explore-page .placeholder-text {
+  background-color: #e0e0e0;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.explore-page .placeholder-title {
+  width: 70%;
+}
+
+.explore-page .placeholder-text {
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .explore-page h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* -----------------------------------
+    Post
+----------------------------------- */
+
+.post-page-wrapper {
+  padding: 40px 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.post-card {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.post-page-wrapper .image-container {
+  position: relative;
+}
+
+.post-page-wrapper .post-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.post-page-wrapper .like-section {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px 10px 0;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.post-page-wrapper .like-section:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.post-page-wrapper .like-section .btn-like {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.post-page-wrapper .like-count {
+  font-size: 18px;
+}
+
+.post-page-wrapper .card-body {
+  padding: 30px;
+}
+
+.post-page-wrapper .card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post-page-wrapper .card-text {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.post-page-wrapper .card-footer {
+  padding: 20px;
+  background-color: #fafafa;
+  border-top: 1px solid #eaeaea;
+}
+
+.post-page-wrapper .comments-section h5 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.post-page-wrapper .comments-section .list-group-item {
+  background-color: #f9f9f9;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.post-page-wrapper .comments-section .list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+.post-page-wrapper .comments-section .text-muted {
+  font-size: 0.85rem;
+}
+
+.post-page-wrapper textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.post-page-wrapper textarea:focus {
+  border-color: #6f42c1;
+  outline: none;
+}
+
+.post-page-wrapper .text-end .btn-primary {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.post-page-wrapper .text-end .btn-primary:hover {
+  background-color: #563d93;
+  border-color: #563d93;
+}
+
+
+

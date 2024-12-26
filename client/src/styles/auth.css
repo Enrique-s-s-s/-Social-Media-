@@ -1,0 +1,144 @@
+/* -----------------------------------
+      Auth Container Styles
+----------------------------------- */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-box {
+  background-color: var(--card-bg-color);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 16px var(--card-shadow);
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+  position: relative;
+}
+
+.auth-box .auth-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.auth-box .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.auth-box .form-input {
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 8px 15px;
+  background-color: var(--input-bg-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--border-radius);
+  color: var(--text-color);
+  transition: border-color var(--transition-speed);
+}
+
+.auth-box .form-input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+.auth-box .button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--transition-speed), transform var(--transition-speed);
+}
+
+.auth-box .button:hover {
+  background-color: var(--hover-accent);
+  transform: translateY(-2px);
+}
+
+.auth-box .auth-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.auth-box .register-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color var(--transition-speed);
+}
+
+.auth-box .register-link:hover {
+  color: var(--hover-accent);
+}
+
+/* -----------------------------------
+      Back Home Link
+----------------------------------- */
+.auth-container .back-home {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color var(--transition-speed), transform var(--transition-speed);
+}
+
+.auth-container .back-home::before {
+  content: "← Back to Home";
+}
+
+.auth-container .back-home:hover {
+  color: var(--hover-accent);
+  transform: translateX(-5px);
+}
+
+/* -----------------------------------
+      Alert Styling
+----------------------------------- */
+.auth-box .alert {
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.auth-box .alert-danger {
+  background-color: #d32f2f;
+  color: #ffffff;
+}
+
+/* -----------------------------------
+      Fade-In Animation
+----------------------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
